@@ -5,7 +5,6 @@ const elc2 = ({prop, parentId,text,func}) => {
     const element = document.createElement(prop.trim().match(/^\s*(\w+)?/)[0])
 
     prop.match(/\.\w+/g)&&(prop.match(/\.\w+/g).forEach(item => {
-        //console.log(item.substring(1))
         element.classList.add(item.substring(1))
     }));
 
