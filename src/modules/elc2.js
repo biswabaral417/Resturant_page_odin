@@ -1,7 +1,6 @@
 // const { match } = require("assert")
 
 const elc2 = ({prop, parentId,text,func}) => {
-    console.log(prop)
     console.log((prop.match(/^\s*(\w+)?/)[0]))
     const element = document.createElement(prop.trim().match(/^\s*(\w+)?/)[0])
 
@@ -25,6 +24,6 @@ const elc2 = ({prop, parentId,text,func}) => {
     text&&(element.textContent=text)
     // console.log(elc2(`div.cls#gug style='color:red;'`))
     console.log(element)
-    return element
+    // return element
 }
 export default elc2

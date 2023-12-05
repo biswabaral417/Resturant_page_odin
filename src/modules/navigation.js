@@ -4,30 +4,28 @@ import cart from "../components/cart";
 import orders from "../components/orders";
 import about from "../components/about";
 import home from "../components/home";
-import component from "./component";
+import { ddFn } from "../functions/navfns";
 
 const compsfns={
     'services':services,'cart':cart,'orders':orders,'about':about,'home':home
 }
 
-window.onload=()=>{
-    
-    if(window.location.pathname=='/')
-    {
-     component(home())
-    }
-    else{
-        router({hrf:window.location.pathname,comp:compsfns[window.location.pathname.substring(1)]()})
-    }
-}
 
 const navigation=()=>{
     document.querySelectorAll('.linkbutton').forEach(lbtn=>{
         lbtn.addEventListener('click',(e)=>{
+            document.querySelectorAll('.linkbutton').forEach(item=>{
+                item.style.backgroundColor='#d1d1d1'
+            
+            })
+            e.target.style.backgroundColor='#a1a1a1'
             e.preventDefault()
-            router({hrf:e.target.parentElement.href,comp:compsfns[e.target.parentElement.textContent.trim()](),event:e})
+            if(document.querySelector('#ddbtn')){
+                ddFn()
+            };
+            router({hrf:e.target.parentElement.href,comp:compsfns[e.target.parentElement.textContent.trim()],event:e})
         })
     })
 };
 
-export default navigation
+export  {navigation,compsfns}

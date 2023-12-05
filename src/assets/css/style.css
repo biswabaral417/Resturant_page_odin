@@ -7,9 +7,6 @@
     /* width:100%; */
 }
 
-body {
-    height: 1000px;
-}
 
 .dflex {
     display: flex;
@@ -33,6 +30,8 @@ a {
     cursor: pointer;
     width: 80px;
     text-align: center;
+    border-bottom: 1px solid white;
+    border-right: 1px solid white;
 }
 
 .dnone {
@@ -40,17 +39,20 @@ a {
 }
 
 .linkbutton:hover {
-    background-color: #f1f1f1;
+    background-color: #f1f1f1 !important;
 }
 
 #ddbtn {
+    all: unset;
+    background-color: #d1d1d1;
     background-repeat: no-repeat !important;
     background-size: contain !important;
     position: absolute;
-    top: 8px;
+    top: 0px;
     left: 10px;
-    height: 25px;
-    width: 25px !important;
+    height: 40px;
+    width: 40px !important;
+    cursor: pointer;
 }
 
 #navbar {
@@ -62,4 +64,9 @@ a {
 }
 .component{
     padding: 40px 10%;
+}
+
+#homecomp{
+    background-image: url(../images/foodsbg.jpg);
+    /* height: 600px; */
 }

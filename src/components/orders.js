@@ -1,7 +1,6 @@
 import elc2 from "../modules/elc2"
 const orders=()=>{
-    const element=elc2({prop:`div.component#orderscomp`,text:'orders page'})
+    elc2({prop:`div.component#orderscomp`,text:'orders page',parentId:'content',parentId:'content'})
     
-    return element
 }
 export default orders
