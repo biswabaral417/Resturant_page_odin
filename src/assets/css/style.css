@@ -62,11 +62,29 @@ a {
     background-color: #d1d1d1;
 
 }
-.component{
+
+.component {
     padding: 40px 10%;
 }
 
-#homecomp{
+#homecomp {
     background-image: url(../images/foodsbg.jpg);
     /* height: 600px; */
+}
+
+#titlediv {
+    margin-top: 50px;
+    text-align: center;
+    color: white;
+    border-radius: 10px;
+    border: 50px solid rgba(247, 243, 243, 0.388);
+    background: #000;
+    /* padding: 10%0%; */
+}
+
+#title {
+    padding: 50px 50px;
+}
+.services{
+    padding:50px 10%;
 }

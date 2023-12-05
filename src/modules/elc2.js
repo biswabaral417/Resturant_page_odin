@@ -10,9 +10,10 @@ const elc2 = ({prop, parentId,text,func}) => {
     }));
 
     element.id = (prop.match(/\#\w+/g)[0].substring(1))
+    console.log(prop.match(/style=\s*'([^']*)'/))
     prop.match(/style=\s*'([^']*)'/) &&(element.style = (prop.match(/style=\s*'([^']*)'/)[1]))
 
-    console.log( prop.match(/src=\s*'([^']*)'/) )
+    prop.match(/src=\s*'([^']*)'/)&& console.log(prop.match(/src=\s*'([^']*)'/)[1])
     prop.match(/src=\s*'([^']*)'/) && (element.setAttribute('src',prop.match(/src=\s*'([^']*)'/)[1]))
 
     console.log( prop.match(/href=\s*'([^']*)'/) )
