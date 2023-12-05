@@ -7,12 +7,12 @@ import {navigation,compsfns} from './modules/navigation';
 
 
 component(navbar)
-if (window.location.pathname == '/') {
+if (window.location.pathname == '/Resturant_page_odin/'||window.location.pathname=='/') {
     component(home)
 }
 else {
-    //console.log(compsfns[window.location.pathname.substring(1)])
-    router({ hrf: window.location.pathname, comp: compsfns[window.location.pathname.substring(1)] })
+    console.log(compsfns[window.location.pathname.substring(21)])
+    router({ hrf: window.location.pathname, comp: compsfns[window.location.pathname.substring(21)] })
 }
 
 navigation()

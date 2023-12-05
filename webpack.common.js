@@ -15,9 +15,14 @@ module.exports = {
         })
     ],
     output: {
+
         filename: '[name].bundle.js',
         path: path.resolve(__dirname, 'dist'),
+        filename: 'index.bundle.js', // Output file name
+        // publicPath: '/Resturant_page_odin/',
+        // publicPath:'/dist/',
         clean: true,
+
     },
     module: {
         rules: [

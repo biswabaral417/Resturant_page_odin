@@ -1,8 +1,8 @@
 const { merge } = require('webpack-merge');
 const common = require('./webpack.common.js');
 const path=require('path')
-
 const express = require('express')
+
 module.exports = merge(common, {
     mode: 'development',
     devtool: 'inline-source-map',
@@ -11,10 +11,9 @@ module.exports = merge(common, {
         historyApiFallback: true,
         static:{
 
-           directory: path.join(__dirname, 'src'), // Serve static files from the 'src' directory
+           directory: path.join(__dirname, 'src'), 
         },
-        // before(app) {
-        //     app.use('../assets/images', express.static(path.resolve(__dirname, 'src',)));
-        // }
+       
+   
     },
 });
