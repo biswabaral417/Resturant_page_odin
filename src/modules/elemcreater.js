@@ -1,6 +1,6 @@
 const elemcreater = ({ elName, elId, styletext, classes,parentId}) => {
     const element = document.createElement(`${elName}`)
-    // console.log(classes)
+    // //console.log(classes)
     classes.forEach(item => {
         (element.className += `${item} `)
     });

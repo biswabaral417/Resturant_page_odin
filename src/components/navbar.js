@@ -33,7 +33,7 @@ const navbar = () => {
   //during testing  the responsiveness and default wide displays navbar ui
   window.addEventListener('resize', () => {
     if (window.innerWidth < 600) {
-      // console.log(document.getElementById('rightnav').style)
+      // //console.log(document.getElementById('rightnav').style)
       if (!document.getElementById('ddbtn')) {
         elc2({ prop: `button#ddbtn`, parentId: 'rightnav' })
         document.getElementById('rnavul').style.position = 'fixed'

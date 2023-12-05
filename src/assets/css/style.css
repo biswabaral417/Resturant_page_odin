@@ -79,7 +79,6 @@ a {
     border-radius: 10px;
     border: 50px solid rgba(247, 243, 243, 0.388);
     background: #000;
-    /* padding: 10%0%; */
 }
 
 #title {
@@ -87,4 +86,12 @@ a {
 }
 .services{
     padding:50px 10%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+.itemimg{
+    height: 300px;
+    width: 250px;
 }

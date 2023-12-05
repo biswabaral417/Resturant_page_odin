@@ -6,15 +6,15 @@ import data from '../assets/data.json'
 
 
 const services = () => {
-    console.log('skbgakhrbo')
-    elc2({ prop: ('div.services#services.component'), text: 'services page', parentId: 'content' })
+    //console.log('skbgakhrbo')
+    elc2({ prop: ('div.services#services.component'), parentId: 'content' })
 
     data.forEach(async (element, i) => {
         elc2({
             prop: `div#food${i}.foodDiv`, parentId: 'services'
         })
         elc2({
-            prop:`img#itemimg${i} src='${element.itemImgLoc}'`,parentId:`food${i}`
+            prop:`img#itemimg${i}.itemimg src='${element.itemImgLoc}'`,parentId:`food${i}`
         })
         document.getElementById(`itemimg${i}`).alt="not fount"
         elc2({
