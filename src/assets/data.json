@@ -2,7 +2,7 @@
       {
         "itemName": "butterScotch",
         "itemPrice": "80RS",
-        "itemImgLoc": "/assets/images/foodimages/icecream/buttorScotch.jpg",
+        "itemImgLoc": "../../assets/images/foodimages/icecream/buttorScotch.jpg",
         "rSeasons": "Barsa"
       },
       {
